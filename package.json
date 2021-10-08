@@ -1,0 +1,20 @@
+{
+  "name": "checkpoint-mongoose",
+  "version": "1.0.0",
+  "description": "mongoose first project",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run front\" \"npm run back\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front": "cd client && cd mern-app && npm start",
+    "back": "nodemon server"
+  },
+  "author": "amen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  }
+}
